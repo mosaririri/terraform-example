@@ -11,7 +11,7 @@ resource "aws_ssm_parameter" "db_username" {
 # 暗号化でのパラメータ保存
 resource "aws_ssm_parameter" "db_raw_password" {
   name = "/db/raw_password"
-  value = "StrongPass!"
+  value = "VeryStrongPassword!"
   type = "SecureString"
   description = "データベースのパスワード"
 }
